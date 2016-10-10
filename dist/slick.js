@@ -136,7 +136,7 @@ angular.module('slick', []).directive('slick', [
               }
             });
             return scope.$watch('currentIndex', function (newVal, oldVal) {
-              if (currentIndex != null && newVal != null && newVal !== currentIndex) {
+              if (newVal != null && newVal !== currentIndex) {
                 return slider.slick('slickGoTo', newVal);
               }
             });
